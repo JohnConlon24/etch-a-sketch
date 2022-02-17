@@ -1,0 +1,74 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+
+body {
+    background: rgba(255, 255, 255, 1);
+    overflow: hidden;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(133, 11, 11);
+    height: 100vh;
+    width: 100%;
+}
+
+.h1 {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 2em;
+    font-style: italic;
+    color: rgb(230, 174, 33);
+}
+
+span {
+    position: absolute;
+    pointer-events: none;
+    animation: animate 5s linear infinite;
+}
+
+.container {
+    width: 900px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(30, 2fr);
+    grid-template-rows: repeat(30, 2fr);
+    z-index: 100;
+    background: gray;
+    border-radius: 5px;
+    border: 2px solid #000000;
+}
+
+.black-button {
+    border: 2px solid #000000;
+    padding: 3em 2em;
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+    font-weight: bold;
+    position: absolute;
+    right: 80%;
+
+ }
+
+ .eraser-button {
+    border: 2px solid #000000;
+    padding: 3em 2em;
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+    font-weight: bold;
+    position: absolute;
+    left: 80%;
+ }
+.buttons:hover {
+   box-shadow:  0px 4px 0px 0px#9ae1eb;
+   cursor: pointer;
+}
+
